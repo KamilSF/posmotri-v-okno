@@ -32,26 +32,25 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,blockquote{
     letter-spacing: 0.15px;
 }
 
-.header__menu-list{
+.header__menu_list{
     display: flex;
-    flex-direction: row;
-    gap: 13.48px;
-    list-style: none;
+    gap: 32px;
+    font-size: 18px;
+    text-transform: lowercase;
+    list-style-type: circle;
+    text-underline-offset: 4px;
+}
+  
+.header__menu_list-first_li{
+    list-style-type: none;
 }
 
-.header__menu-link{
+.menu-link_active{
     color: #000;
+}
+
+.menu-link_active-first_li{
     text-decoration: none;
-}
-
-.header__menu-link_underline{
-   text-decoration: underline;
-   text-underline-offset: 4px;
-}
-
-.header__menu-link_underline::before{
-    content: url(/images/list_marker.svg);
-    margin-right: 11px;
 }
 
 .header__logo{
@@ -66,11 +65,18 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,blockquote{
     min-width: 100%;
 }
 
-.header__contacts{
+.contacts{
     display: flex;
+    flex-direction: column;
+    font-style: normal;
+    line-height: 24.3px;
+    letter-spacing: 0.17px;
+    max-width: 220px;
+}
+
+.header__contacts{
     margin-right: 25.48px;
     margin-top: 3px;
-    font-style: normal;
 }
 
 .header__contacts-list{
@@ -90,7 +96,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,blockquote{
 
 .jambotron{
     min-height: 757px;
-    background-image: url(../images/lotus.png);
+    background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -101,63 +107,41 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,blockquote{
     font-weight: 700;
     text-transform: uppercase;
     padding: 164px 50px 126px 50px;
+    line-height: 122px;
 }
 
 .accept-span{
-    display: block;
-}
-
-.accept-span_top-left{
     display: inline-block;
     letter-spacing: 30px;
 }
 
-.accept-span_top-right{
-    display: inline-block;
-    letter-spacing: 60px;
-}
-
-.accept-span_center-left{
-    display: inline-block;
-    letter-spacing: 30px;
-}
-
-.accept-span_center-right{
-    display: inline-block;
+.accept-span_right{
     letter-spacing: 60px;
 }
 
 .accept-span_bottom-left{
-    display: inline-block;
     letter-spacing: 60px;
 }
 
-.accept-span_bottom-center{
-    display: inline-block;
-    letter-spacing: 30px;
-}
-
 .accept-span_bottom-right{
-    display: inline-block;
     letter-spacing: 0px;
 }
 
-.text-left{
+.text{
     display: flex;
+}
+
+.text-left{
     justify-content: start;
 }
 
 .text-center{
     text-align: center;
-    padding-top: 9px;
-    display: flex;
     justify-content: center;
 }
 
 .text-right{
     text-align: right;
-    padding-top: 3px; 
-    display: flex;
     justify-content: end;
 }
 
@@ -217,24 +201,28 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,blockquote{
     background-position: center 100%;
 }
 
+.lots__link{
+    text-decoration: none;
+}
+
 .content-film{
-    background-image: url(../images/card_1.png);
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .content-book{
-    background-image: url(../images/card_2.png);
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 .content-picture{
-    background-image: url(../images/card_3.png);
+    background-image: url(../images/card-lot-03.jpg);
 }
 
 .card__content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 464px;
-    padding: 51px 40px 48px 40px;
+    min-height: 464px;
+    padding: 51px 40px 46.5px 40px;
     color: #fff;
 }
 
@@ -300,13 +288,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,blockquote{
 }
 
 .footer__contacts{
-    display: flex;
-    line-height: 24.3px;
-    letter-spacing: 0.17px;
-    flex-direction: column;
-    max-width: 220px;
     margin-right:20px;
-    font-style: normal;
 }
 
 .footer__contacts-phone{

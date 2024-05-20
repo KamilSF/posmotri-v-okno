@@ -12,22 +12,16 @@
 <body>
     <header class="header content-section">
         <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">главная</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link header__menu-link_underline">посмотреть лоты</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link header__menu-link_underline">об аукционе</a>
-                </li>
-            </ul>
+            <ul class="header__menu_list ">
+                <li class="header__menu_list-first_li"><a class="menu-link_active menu-link_active-first_li" href="#">Главная</a></li>
+                <li><a href="#" class="menu-link_active">Посмотреть лоты</a></li>
+                <li><a href="#" class="menu-link_active">Об аукционе</a></li>
+              </ul>
         </nav>
         <a class="header__logo">
-            <img class="header__logo-item" src="../images/Vector.svg" alt="логотип">
+            <img class="header__logo-item" src="images/logo-black.svg" alt="логотип">
         </a>
-        <address class="header__contacts">
+        <address class="header__contacts contacts">
             <ul class="header__contacts-list">
                 <li>
                     <a href="tel" class="header__contacts-item header__contacts-item_underline">+9 999 555 5555</a>
@@ -44,30 +38,30 @@
     <main class="content">
         <section class="jambotron content-section">
             <h1 class="jambotron__title">
-                <span class="accept-span text-left">
-                    <span class="accept-span_top-left">
+                <span class="accept-span text text-left">
+                    <span class="accept-span_left accept-span_top-left">
                         о
                     </span> 
-                    <span class="accept-span_top-right">
+                    <span class="accept-span_right accept-span_top-right">
                         но
                     </span>
                 </span>
-                <span class="accept-span text-center">
-                    <span class="accept-span_center-left">
+                <span class="accept-span text text-center">
+                    <span class="accept-span_left accept-span_center-left">
                         те
                     </span>
-                    <span class="accept-span_center-right">
+                    <span class="accept-span_right accept-span_center-right">
                         бе
                     </span>
                 </span>
-                <span class="accept-span text-right">
-                    <span class="accept-span_bottom-left">
+                <span class="accept-span text text-right">
+                    <span class="accept-span_left accept-span_bottom-left">
                         н
                     </span>
-                    <span class="accept-span_bottom-center">
+                    <span class="accept-span_center accept-span_bottom-center">
                         ад
                     </span>
-                    <span class="accept-span_bottom-right">
+                    <span class="accept-span_right accept-span_bottom-right">
                         о
                     </span>
                 </span>
@@ -83,56 +77,62 @@
             <h2 class="lots__title">Лоты</h2>
             <ul class="lots__list">
                 <li class="lots__list-item content-film">
-                    <article class="card">
-                        <div class="card__content">
-                            <h3 class="card__title">фильм режиссёра, который бросил киношколу</h3>
-                            <div class="card__text">
-                                <p>
-                                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
-                                    знали, что режиссёр — Пол Томас Андерсон?
-                                </p>
-                            </div>
-                        </div>
-                    </article>
+                    <a href="#" class="lots__link"
+                        <article class="card">
+                                <div class="card__content">
+                                    <h3 class="card__title">фильм режиссёра, который бросил киношколу</h3>
+                                    <div class="card__text">
+                                        <p>
+                                            Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
+                                            знали, что режиссёр — Пол Томас Андерсон?
+                                        </p>
+                                    </div>
+                                </div> 
+                        </article>
+                    </a>
                 </li>
                 <li class="lots__list-item content-book">
-                    <article class="card">
-                        <div class="card__content">
-                            <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
-                            <div class="card__text">
-                                <p>
-                                    Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
-                                    древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об
-                                    истории литературы, начиная с античных времён. И это всё накладывается на эпическую
-                                    поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-                                </p>
+                    <a href="#" class="lots__link">
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
+                                        древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об
+                                        истории литературы, начиная с античных времён. И это всё накладывается на эпическую
+                                        поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                    </a>
                 </li>
                 <li class="lots__list-item content-picture">
-                    <article class="card">
-                        <div class="card__content">
-                            <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                            <div class="card__text">
-                                <p>
-                                    Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
-                                    инфузорию-туфельку. Никаких полей, лесов, котиков. . . Сколько
-                                    бы
-                                    вы на такое
-                                    поставили,
-                                    если бы не знали, что это — одна из революционных работ Кандинского?
-                                </p>
+                    <a href="#" class="lots__link">
+                        <article class="card">
+                            <div class="card__content">
+                                <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
+                                        инфузорию-туфельку. Никаких полей, лесов, котиков. . . Сколько
+                                        бы
+                                        вы на такое
+                                        поставили,
+                                        если бы не знали, что это — одна из революционных работ Кандинского?
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                    </a>
                 </li>
             </ul>
             <a href="#" class="lots__more">посмотреть больше</a>
         </section>
         <section class="about content-section">
             <div class="about__logo">
-                <img class="about__logo-white" src="../images/logo.svg" alt="логотип">
+                <img class="about__logo-white" src="images/logo-white.svg" alt="логотип">
             </div>
             <div class="about__content">
                 <div class="about__content-title">
@@ -157,7 +157,7 @@
         </section>
     </main>
     <footer class="footer content-section">
-        <address class="footer__contacts">
+        <address class="footer__contacts contacts">
             <a class="footer__contacts-phone" href="tel">
                 +9 999 555 5555
             </a>
@@ -184,13 +184,19 @@
         <nav class="footer__socials">
             <ul class="footer__socials-menu_list">
                 <li class="footer__socials-menu_item">
-                    <img class="footer__socials-menu_link YouTube" src="/images/YouTube.svg" alt="логотип ютуба">
+                    <a href="#" class="footer__socials-menu_link YouTube">
+                        <img  src="images/yt.svg" alt="логотип ютуба">
+                    </a>
                 </li>
                 <li class="footer__socials-menu_item">
-                    <img class="footer__socials-menu_link VK" src="/images/VK.svg" alt="логотип вконтакте">
+                    <a href="#" class="footer__socials-menu_link VK">
+                        <img  src="images/vk.svg" alt="логотип вконтакте">
+                    </a>
                 </li>
                 <li class="footer__socials-menu_item">
-                    <img class="footer__socials-menu_link Pinterest" src="/images/Pinterest.svg" alt="логотип пинтереста">
+                    <a href="#" class="footer__socials-menu_link Pinterest" >
+                        <img src="images/pinterest.svg" alt="логотип пинтереста">
+                    </a>
                 </li>
             </ul>
         </nav>
