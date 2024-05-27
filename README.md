@@ -1,2 +1,1 @@
-# posmotri_v_okno-main
-# posmotri_v_okno-main
+https://github.com/KamilSF/posmotri-v-okno.git
